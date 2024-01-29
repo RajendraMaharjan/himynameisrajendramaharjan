@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { contact, section5Title, social } from '../../profile'
-import { async } from 'q';
 
 // export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start"
 
