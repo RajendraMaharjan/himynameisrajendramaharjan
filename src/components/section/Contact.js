@@ -1,19 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { contact, section5Title, social } from '../../profile'
+import { async } from 'q';
+
+// export NODE_OPTIONS=--openssl-legacy-provider && react-scripts start"
 
 const Contact = () => {
 
+    const [formData, setFormData] = useState({
+        name:"",
+        email: "",
+        subject: "",
+        message : "",
+        phone: ""
+    })
+
     const handleSubmit = (e) => {
+
+        // action={contact.contactUrl ? contact.contactUrl : "mailto:rajendramaharjan666@gmail.com"}
         e.preventDefault();
-    
-        if (false) {
-          // Proceed with your form submission logic
-          console.log('Valid email');
-        } else {
-          // Handle invalid email
-          console.error('Invalid email');
+
+        console.log(formData, 'form data is here');
+        
+        try {
+            fetch(contact.contactUrl, {
+              method: "POST",
+              body: JSON.stringify(formData),
+            }).then((res  => {
+                console.log(res, 'res is here');
+                alert("RESPONSE Done");
+            })).catch((err) => {
+                console.log(err);
+            });
+            e.target.reset();
+        } catch (err) {
+            console.log(err);
         }
       };
+
+      const handleOnChange = (e) => {
+        setFormData((prev) => ({...prev, [e.target.name] : e.target.value}))
+      }
     
     return (
         <div className="parallax">
@@ -27,18 +53,33 @@ const Contact = () => {
             <div className="git-cont row">
                 <div className="col-12 col-sm-6 half">
                     {/* <form onSubmit={handleSubmit}> */}
-                    <form action={contact.contactUrl ? contact.contactUrl : "mailto:rajendramaharjan666@gmail.com"} method={contact.contactUrl ? "POST" : "GET"}>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name" required></input>
-                        <input type="mail" id="mailid" name="Email" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></input>
-                        <input type="text" id="sub" name="Subject" placeholder="Subject" required></input>
-                        <textarea id="msg" name="message" placeholder="Message" required></textarea>
+                    <form  onSubmit={handleSubmit}>
+                        <input type="text" id="fname" name="name" value={formData.name} onChange={handleOnChange}  placeholder="Your name" required></input>
+                        <input type="email" id="mailid" name="email" value={formData.email} onChange={handleOnChange}  placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></input>
+                        <input type="text" id="sub" name="subject" value={formData.subject} onChange={handleOnChange} placeholder="Message Title" required></input>
+                        <input type="text" id="phone" name="phone" value={formData.phone} onChange={handleOnChange} placeholder="Phone"></input>
+                        <textarea id="msg" name="message" value={formData.message} onChange={handleOnChange} placeholder="Message" required></textarea>
                         <button style={{cursor: 'pointer'}} type="submit">Send Message</button>
                     </form>
                 </div>
                 <div className="col-12 col-sm-6 half">
                     <p className="lead">
-                        {contact.pitch}        
+                        {contact.pitch}   
+                        <br/> 
+                        <div className='contact-information'>
+                        <div>
+                        <b>{contact.name}</b>
+                        </div>
+                        <div>   
+                        <b>Ping me here:</b> {contact.email}
+                        </div>
+                        <div >
+                            <b>Let's connect: </b>{contact.phone}
+                        </div>
+                    </div>    
                     </p>
+                    <br></br> 
+                
                 <div className="d-flex justify-content-center align-items-center flex-column">
                 <div className="inline-block">
                     {social.linkedin && <a title="Visit Linkedin profile" rel="noopener noreferrer" target="_blank"  href={social.linkedin}><i className="fab fa-linkedin"></i></a>}

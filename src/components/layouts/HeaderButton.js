@@ -1,11 +1,11 @@
 import React from 'react'
 
-const HeaderButton = () => {
+const HeaderButton = ({btnCss,title,...props}) => {
 
     return (
         <>
             <div className="mx-auto">
-                <a href="#about"><button className="see">Checkout Profile<i className="fas fa-eye"></i></button></a>
+                <a {...props}><button className={`see ${btnCss ?? ''}`}  >{title}<i className="fas fa-eye"></i></button></a>
             </div>
         </>
     )

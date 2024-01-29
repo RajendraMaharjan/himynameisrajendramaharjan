@@ -408,6 +408,11 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  text-align: justify !important;
+}
+.contact-information {
+  text-align: left;
+  margin-top: 20px;
 }
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);

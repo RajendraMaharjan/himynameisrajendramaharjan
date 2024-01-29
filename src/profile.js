@@ -84,68 +84,46 @@ const projects = [
   {
     // Add image in './styles/images.css' in #project1
     id: "project1",
-    name: "Microservice Development",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    name: "SMI Project",
+    skills: ["Java, JPA, HTML, CSS, MySQL, IntelliJ Idea"],
+    url: "https://github.com/RajendraMaharjan",
   },
   {
     // Add image in './styles/images.css' in #project2
     id: "project2",
-    name: "SMI Project",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    name: "Agency Monitor Spider",
+    skills: ["Java, Google Guice, JPA, HTML, CSS, JS, Docker, Linux, Shell"],
+    url: "",
   },
   {
     // Add image in './styles/images.css' in #project3
     id: "project3",
-    name: "Project 3",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    name: "Risk Customer Service",
+    skills: ["Java, Springboot, microservices, Resilience 4j, Docker, Harness, Kibana, Postman"],
+    url: "https://github.com/RajendraMaharjan",
   },
   {
     // Add image in './styles/images.css' in #project4
     id: "project4",
-    name: "Project 4",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #project5
-    id: "project5",
-    name: "Project 5",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #project6
-    id: "project6",
-    name: "Project 6",
-    skills: ["HTML, CSS, JS"],
-    url: "https://github.com/kaustubhai",
+    name: "CrsAggregator Business Service",
+    skills: ["Springboot, Java, React, Html, CSS, Oracle, Docker, K8, SonarQube, Openshift, CICD, bitbucket, SonarLint, Kibana, Intellij Idea"],
+    url: "https://github.com/RajendraMaharjan"  ,
   },
 ];
-// Edit your Miscellaneous Activities, its name and the url.
-// You can omit freely anything if you dont have it
-// To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = "Miscellaneous";
-const miscellaneous = [
+// Edit your Education Activities, its name and the url.
+const section4Title = "Education";
+const education = [
   {
     // Add image in './styles/images.css' in #misc1
-    id: "misc1",
-    name: "Miscellaneous 1",
-    url: "https://github.com/kaustubhai",
+    id: "edu1",
+    name: "Bachelor's in Computer Engineering",
+    url: "https://www.kecktm.edu.np/",
   },
   {
     // Add image in './styles/images.css' in #misc2
-    id: "misc2",
-    name: "Miscellaneous 2",
-    url: "https://github.com/kaustubhai",
-  },
-  {
-    // Add image in './styles/images.css' in #misc3
-    id: "misc3",
-    name: "Miscellaneous 3",
-    url: "https://github.com/kaustubhai",
+    id: "edu2",
+    name: "Master's In Computer Science",
+    url: "https://www.miu.edu/",
   },
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
@@ -154,8 +132,11 @@ const miscellaneous = [
 const section5Title = "Get in Touch";
 const contact = {
   pitch:
-    "Excited about my work? Let's connect! Whether you have a project in mind or just want to chat tech, I'm all ears. Drop me a message, and let's explore the possibilities together.",
-  copyright: "Rajendra Maharjan",
+      "Excited about my work? Let's connect! Whether you have a project in mind or just want to chat tech, I'm all ears. Drop me a message, and let's explore the possibilities together.",
+    copyright: "Rajendra Maharjan",
+    name:"Rajendra Maharjan",
+    email:"rajendramaharjan666@gmail.com",
+    phone:"+1(641)-819-2261", 
   contactUrl: "Post to AWS HERE -- Pending rajendra",
 };
 // Paste your respective social media links. You can omit any if you dont have it
@@ -174,7 +155,7 @@ export {
   about,
   skillsBar,
   projects,
-  miscellaneous,
+  education,
   contact,
   social,
   section2title,

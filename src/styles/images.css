@@ -1,44 +1,31 @@
 
 /* Add your profile image here */
 .Photo{
-    src: "../image/rajendra-dp.jpeg";
-    /* background-image: url('https://images.pexels.com/photos/3799821/pexels-photo-3799821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'); */
+    background-image: url('../image/rajendra-dp.jpeg');
 }
-/* Projects Photo */
+/* Projects Photo */    
 .project1{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+one');
+    background-image: url('https://via.placeholder.com/400x600.png?text=SMI+Project');
     cursor: none;    
 }
 .project2{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+two');
+    background-image: url('https://via.placeholder.com/400x600.png?text=AMR Spider');
     cursor: none;
 }
 .project3{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+three');
+    background-image: url('https://via.placeholder.com/400x600.png?text=CreditWorkFlow');
     cursor: none;
 }
 .project4{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+four');
+    background-image: url('https://via.placeholder.com/400x600.png?text=CrsAggregator');
     cursor: none;
 }
-.project5{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+five');
+/* University Activities photo */
+.edu1{
+    background-image: url('../image/kec.png');
     cursor: none;
 }
-.project6{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Project+six');
-    cursor: none;
-}
-/* Miscelaneous Activities photo */
-.misc1{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+one');
-    cursor: none;
-}
-.misc2{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+two');
-    cursor: none;
-}
-.misc3{
-    background-image: url('https://via.placeholder.com/400x600.png?text=Miscellaneous+three');
+.edu2{ 
+    background-image: url('../image/miu.png');
     cursor: none;
 }

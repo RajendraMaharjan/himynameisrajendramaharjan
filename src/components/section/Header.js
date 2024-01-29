@@ -36,7 +36,12 @@ const Header = () => {
                 <input id="mode-switch" onClick={e => toggleDarkMode(e)} type="checkbox"/>
                 <span className="slider round"></span>
             </label>
-            <HeaderButton/>
+            <div>
+                <HeaderButton  href="#about" title="Checkout Portfolio" />
+                <HeaderButton onClick={() => {
+                    window.open("/rajblog.pdf", "_blank","fullscreen=yes")
+                }} href={"#"} title="Checkout Blog" btnCss="blog-button" />
+            </div>
             </div>
             <img id="not-dark" onClick={scrollTo} alt="Contact Me" title="Contact Me" className="gtp" src="profile.png"></img>
         </div>

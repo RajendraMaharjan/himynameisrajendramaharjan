@@ -110,7 +110,7 @@ button:focus {
   background-color: #000;
 }
 .about-text {
-  width: 80%;
+  width: 95%;
   padding: 2%;
 }
 .red-line {
@@ -195,6 +195,9 @@ button:focus {
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+}
+.img-education {
+  background-size: contain !important;
 }
 .image-project:hover .img-pro {
   transform: scale(1.2);
@@ -359,8 +362,11 @@ textarea:focus {
   padding: 5px 15px;
   padding-bottom: 7px;
   border-radius: 3px;
-  left: 44%;
+  left: 35%;
   top: 90%;
+}
+.blog-button {
+  left: 55%;
 }
 .fa-eye {
   color: #fff;
