@@ -138,7 +138,7 @@ const contact = {
     address:"Portland St, Irving, TX, 75038",
     email:"rajendramaharjan666@gmail.com",
     phone:"+1(641)-819-2261", 
-  contactUrl: "Post to AWS HERE -- Pending rajendra",
+    contactUrl: "https://pxhmvi3puz22vg5zimsntbibkq0zgwha.lambda-url.us-east-1.on.aws/",
 };
 // Paste your respective social media links. You can omit any if you dont have it
 // Upload your resume in your drive, get the shaareable link and paste it in the resume section
@@ -146,7 +146,7 @@ const social = {
   github: "https://github.com/RajendraMaharjan",
   instagram: "https://www.instagram.com/rajendra_maharjan/",
   linkedin: "https://www.linkedin.com/in/rajendra-maharjan/",
-  resume: "https://drive.usercontent.google.com/u/2/uc?id=13k1KdtMnxyFQFshcmsM86ohsGGLnsJaN&export=download",
+  resume: "https://rajendra-portfolio-project-bucket.s3.amazonaws.com/RM-Resume.pdf",
 };
 // Dont change anything here
 export {

@@ -27,13 +27,19 @@ const Contact = () => {
               body: JSON.stringify(formData),
             }).then((res  => {
                 console.log(res, 'res is here');
-                alert("RESPONSE Done");
+                setFormData({
+                    name:"",
+                    email: "",
+                    subject: "",
+                    message : "",
+                    phone: ""
+                });
+                alert("Thank for your message.\n I will try to get back to you as soon as possible.");
             })).catch((err) => {
-                console.log(err);
+                console.log(err, "Something went wrong.");
             });
-            e.target.reset();
         } catch (err) {
-            console.log(err);
+            console.log(err, "Something went wrong.");
         }
       };
 
