@@ -135,6 +135,7 @@ const contact = {
       "Excited about my work? Let's connect! Whether you have a project in mind or just want to chat tech, I'm all ears. Drop me a message, and let's explore the possibilities together.",
     copyright: "Rajendra Maharjan",
     name:"Rajendra Maharjan",
+    address:"Portland St, Irving, TX, 75038",
     email:"rajendramaharjan666@gmail.com",
     phone:"+1(641)-819-2261", 
   contactUrl: "Post to AWS HERE -- Pending rajendra",

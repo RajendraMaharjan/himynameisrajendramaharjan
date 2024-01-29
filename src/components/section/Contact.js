@@ -70,6 +70,9 @@ const Contact = () => {
                         <div>
                         <b>{contact.name}</b>
                         </div>
+                        <div>
+                        {contact.address}
+                        </div>
                         <div>   
                         <b>Ping me here:</b> {contact.email}
                         </div>
